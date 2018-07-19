@@ -1,0 +1,231 @@
+:root {
+	--color-bg-default: #F8F8F8;
+	--color-typo-default: black;
+	--font-size-default: 17px;
+	--font-size-h1: 100px;
+	--font-size-h2: 60px;
+	--font-size-h2: 60px;
+	--font-size-logo: 20px;
+	--column-size: 120px;
+	--layout-h-padding: 140px;
+	--layout-v-padding: 140px;
+}
+@media screen and (min-width: 1130px) {
+	:root {
+		--font-size-default: 17px;
+		--font-size-h1: 100px;
+		--font-size-h2: 60px;
+		--font-size-h3: 28px;
+		--font-size-logo: 20px;
+		--column-size: 140px;
+		--layout-h-padding: 140px;
+		--layout-v-padding: 140px;
+	}
+}
+@media screen and (max-width: 1129px) {
+	:root {
+		--font-size-default: 15px;
+		--font-size-h1: 100px;
+		--font-size-h2: 60px;
+		--font-size-h3: 28px;
+		--font-size-logo: 20px;
+		--column-size: 120px;
+		--layout-h-padding: 80px;
+		--layout-v-padding: 100px;
+	}
+}
+@media screen and (max-width: 800px) {
+	:root {
+		--font-size-default: 15px;
+		--font-size-h1: 100px;
+		--font-size-h2: 60px;
+		--font-size-h3: 28px;
+		--font-size-logo: 20px;
+		--column-size: 140px;
+		--layout-h-padding: 60px;
+		--layout-v-padding: 100px;
+	}
+}
+@media screen and (max-width: 500px) {
+	:root {
+		--font-size-default: 15px;
+		--font-size-h1: 48px;
+		--font-size-h2: 32px;
+		--font-size-h3: 20px;
+		--font-size-logo: 20px;
+		--column-size: 100px;
+		--layout-h-padding: 28px;
+		--layout-v-padding: 80px;
+	}
+	nav.navigation, .icon-plus__icon {
+		display: none;
+	}
+}
+@media screen and (max-width: 320px) {
+	:root {
+		--font-size-default: 15px;
+		--font-size-h1: 48px;
+		--font-size-h2: 32px;
+		--font-size-h3: 20px;
+		--font-size-logo: 20px;
+		--column-size: 100px;
+		--layout-h-padding: 16px;
+		--layout-v-padding: 60px;
+	}
+	nav.navigation, .icon-plus__icon {
+		display: none;
+	}
+}
+
+
+
+body, html {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: var(--font-size-default);
+	color: var(--color-typo-default);
+	background: var(--color-bg-default);
+}
+h1 {
+	font-family: 'Arvo', serif;
+	font-size: var(--font-size-h1);
+	font-weight: bold;
+	line-height: 1em;
+	text-transform: uppercase;
+	margin: 0 0 12px 0;
+}
+h2 {
+	font-family: 'Arvo', serif;
+	font-size: var(--font-size-h2);
+	font-weight: normal;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin: 0 0 1em;
+}
+h3 {
+	font-size: var(--font-size-h3);
+	line-height: 1em;
+	font-weight: normal;
+	margin: 0 0 12px;
+}
+p {
+	margin: 0 0 12px;
+}
+a {
+	text-decoration: none;
+	color: #4A90E2;
+	transition: color 0.3s ease;
+}
+a:hover {
+	text-decoration: none;
+	color: #54a8ff;
+}
+
+
+header.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px var(--layout-h-padding);
+	background: var(--color-bg-default);
+}
+.header__logo {
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-size: var(--font-size-logo);
+	line-height: 20px;
+	margin-right: 40px;
+}
+.header__socials {
+	position: absolute;
+	top: 26px;
+	right: var(--layout-h-padding);
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav.navigation {
+	padding: 12px 180px 12px 0;
+}
+.navigation__item {
+	display: inline-block;
+	margin-right: 40px;
+	text-decoration: none;
+	color: var(--color-typo-default);
+	opacity: 0.6;
+	transition: opacity 0.3s ease;
+}
+.navigation__item:hover {
+	opacity: 1;
+	color: var(--color-typo-default);
+}
+.navigation__item:last-child {
+	margin-right: 0px;
+}
+
+.round-icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-left: 12px;
+	background: pink;
+}
+.round-icon_name_linkedin {
+
+}
+.round-icon_name_facebook {
+
+}
+.round-icon_name_codepen {
+
+}
+.round-icon_name_github {
+
+}
+
+section {
+	min-height: 100vh;
+	box-sizing: border-box;
+	padding: var(--layout-v-padding) var(--layout-h-padding);
+}
+
+.section_type_main {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer.footer {
+	padding: 20px var(--layout-h-padding);
+	color: black;
+	opacity: 0.6;
+}
+
+.grid {
+	display: grid;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+.grid_ratio_1-1 {
+	grid-template-columns: repeat(auto-fit, minmax(calc(var(--column-size) * 3), 1fr));
+}
+.grid_ratio_1-1-1 {
+	grid-template-columns: repeat(auto-fit, minmax(calc(var(--column-size) * 2), 1fr));
+}
+
+.icon-plus {
+ 	display: flex;
+ 	align-items: top;
+}
+.icon-plus__icon {
+	margin-right: 20px;
+}
+.icon-plus__text {
+
+}
