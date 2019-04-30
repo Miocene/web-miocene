@@ -93,9 +93,6 @@
 
 
 body, html {
-
-	width: 100%;
-	height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -103,7 +100,6 @@ body, html {
 	color: var(--color-typo-default);
 	background: var(--color-bg-default);
 	scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 p, .text {
 	color: rgb(74, 78, 87);
