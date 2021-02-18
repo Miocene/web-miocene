@@ -35,7 +35,6 @@ body, html {
 body {
   width: 100%;
   max-width: 1180px;
-  /* 80px */
   margin: 0 auto;
   padding: 0 var(--gap);
   box-sizing: border-box;
@@ -45,7 +44,6 @@ body {
   position: fixed;
   width: calc(100% - var(--gap) * 2);
   max-width: 1100px;
-  /* 80px */
   margin: 0 auto;
   padding: 2em 0;
   box-sizing: border-box;
@@ -94,6 +92,14 @@ h2 {
   font-size: var(--text-size-xl);
   line-height: 1.2em;
   color: var(--color-text-primary);
+}
+
+h3 {
+  margin: 0 0 0.75em;
+  font-weight: 300;
+  font-size: var(--text-size-l);
+  line-height: 1.2em;
+  color: var(--color-text-secondary);
 }
 
 p {
