@@ -1,6 +1,10 @@
 ## Activity
 
 ### 2021
+🇷🇺 CSS Animation Today on CodefFest 2021
+
+🇷🇺 [podcast] [Веб-стандарты](https://www.youtube.com/watch?v=iXf_5eIb464&t=7s)
+
 🇺🇸 The European Wrap-Up - International Women's Day 2021
 
 🇷🇺 [podcast] [Тяжелое утро с HolyJS](https://www.youtube.com/watch?v=VQVCQEe88ZI)
