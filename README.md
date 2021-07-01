@@ -31,6 +31,8 @@
 
 🇷🇺 [Анимация в вебе](https://www.youtube.com/watch?v=1S6DJmW_D7I)
 
+🇷🇺 [Make a World](https://www.youtube.com/watch?v=_0psqory6rk&t=1s)
+
 🇷🇺 [podcast] [Веб-стандарты](https://www.youtube.com/watch?v=Zk86fpbYqi0)
 
 ### 2018
