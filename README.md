@@ -1,6 +1,12 @@
 ## Activity
 
 ### 2021
+🇷🇺 Сам себе дизайнер — FrontendConf 2021
+
+🇺🇸 CSS Animation - London CSS
+
+🇺🇸 CSS Animation Today - CSSCamp 2021
+
 🇷🇺 CSS Animation Today on CodefFest 2021
 
 🇷🇺 [podcast] [Веб-стандарты](https://www.youtube.com/watch?v=iXf_5eIb464&t=7s)
