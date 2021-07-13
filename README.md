@@ -1,6 +1,16 @@
 ## Activity
 
 ### 2021
+🇷🇺 Сам себе дизайнер — FrontendConf 2021
+
+🇺🇸 CSS Animation - London CSS
+
+🇺🇸 CSS Animation Today - CSSCamp 2021
+
+🇷🇺 CSS Animation Today on CodefFest 2021
+
+🇷🇺 [podcast] [Веб-стандарты](https://www.youtube.com/watch?v=iXf_5eIb464&t=7s)
+
 🇺🇸 The European Wrap-Up - International Women's Day 2021
 
 🇷🇺 [podcast] [Тяжелое утро с HolyJS](https://www.youtube.com/watch?v=VQVCQEe88ZI)
@@ -20,6 +30,8 @@
 🇺🇸 [Make a world](https://www.youtube.com/watch?v=fdtPO08sqBI)
 
 🇷🇺 [Анимация в вебе](https://www.youtube.com/watch?v=1S6DJmW_D7I)
+
+🇷🇺 [Make a World](https://www.youtube.com/watch?v=_0psqory6rk&t=1s)
 
 🇷🇺 [podcast] [Веб-стандарты](https://www.youtube.com/watch?v=Zk86fpbYqi0)
 
