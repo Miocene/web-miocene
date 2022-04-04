@@ -4,84 +4,47 @@
 		<meta charset="utf-8">
 		<title>I'm Julia Miocene</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap&text=&HIIMJULAOCENDSG'" rel="stylesheet">
 		<link rel="stylesheet" href="main.css">
 
 		<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(49657042, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49657042" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+		<script>
+			let html = document.getElementsByTagName('html')[0];
+			let colors = ["blue", "orange", "red", "green"];
+
+			function getRandomInt(max) {
+				return Math.floor(Math.random() * max);
+			}
+
+			html.setAttribute(`style`, `--accent-one: var(--${colors[getRandomInt(4)]});`);
+		</script>
 	</head>
 	<body>
-		<header class="header">
-			<a href="https://twitter.com/julia_miocene" class="header__link">
-				<span class="header__text-4big">Twitter</span>
-				<span class="header__text-4small">Twtr</span>
-			</a>
-			<a href="https://codepen.io/miocene/" class="header__link">
-				<span class="header__text-4big">Codepen</span>
-				<span class="header__text-4small">Cdpn</span>
-			</a>
-			<a href="https://linkedin.com/in/miocene" class="header__link">
-				<span class="header__text-4big">Linkedin</span>
-				<span class="header__text-4small">Lnkdn</span>
-			</a>
-			<a href="https://github.com/Miocene" class="header__link">
-				<span class="header__text-4big">Github</span>
-				<span class="header__text-4small">Gthb</span>
-			</a>
-			<a href="https://t.me/julia_miocene" class="header__link">
-				<span class="header__text-4big">Telegram</span>
-				<span class="header__text-4small">Tlgrm</span>
-			</a>
-		</header>
-
-		<section class="main-section">
-			<h1>Hey, I'm<br />Julia Miocene</h1>
-			<ul class="position-list">
-				<li class="position-list__item">Digital Product Designer</li>
-				<li class="position-list__item">UX/UI Designer</li>
-				<li class="position-list__item">Design System Architect</li>
-				<li class="position-list__item">CSS Enthusiast</li>
-				<li class="position-list__item">Design in Code</li>
-				<li class="position-list__item">Pure CSS Animator</li>
-			</ul>
-		</section>
-
-		<section class="section">
-			<h2>Work Experience</h2>
-			<p>Almost 10&nbsp;years creating products for people and businesses. Currently working at&nbsp;<a href='https://yandex.ru'>Yandex</a>, Saint-Petersburg as&nbsp;Product Designer</p>
-			<p>Worked at <a href='https://gazprom-neft.ru'>Gazprom neft</a> / <a href='https://sberbank.ru'>Sberbank</a> / <a href='https://kontur.ru'>Kontur</a> and others</p>
-		</section>
-
-		<section class="section">
-			<h2>Latest Pure CSS Animations</h2>
-			<div class="grid grid_ratio_1-1-1">
-				<a class="card" href="https://codepen.io/miocene/pen/NWRWQpX">🏰 Monument Valley <span>/ November 2020</span></a>
-				<a class="card" href="https://codepen.io/miocene/pen/vYNgqMR">🚜 Tracktor <span>/ May 2020</span></a>
-				<a class="card" href="https://codepen.io/miocene/pen/rNOVWor">👁 Neomorphic Eye <span>/ May 2020</span></a>
-				<a class="card" href="https://codepen.io/miocene/pen/aPwrpw">🍸 Birthday <span>/ January 2019</span></a>
-				<a class="card" href="https://codepen.io/miocene/pen/mjLPVp">🧙‍♂️ Moustached Nanny <span>/ August 2018</span></a>
-				<a class="card" href="https://codepen.io/miocene">See All Pens on Codepen.io</a>
+		<div class="header-wrap">
+			<div class="image">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
-		</section>
+			<h1>HI, I'M<br />JULIA MIOCENE<br />DESIGN & CODE</h1>
+		</div>
 
-		<section class="section">
-			<h2>Keynote</h2>
-			<div class="grid grid_ratio_1-1-1">
-				<a class="card" href="https://www.youtube.com/watch?v=VlGGB-4wlQ4">🇷🇺 Палка, палка, огуречик. Рисуем персонажную анимацию на CSS <br/><span> Я❤️Фронтенд 2021</span></a>
-				<a class="card" href="https://www.youtube.com/watch?v=O1A_QCptiIM">🇷🇺 Make a World on Pure CSS <br/><span> FrontendConf 2019</span></a>
-				<a class="card" href="https://youtu.be/_0psqory6rk?t=6794">🇷🇺 Make a World <br/><span> WSD 2019</span></a>
-				<a class="card" href="https://www.youtube.com/watch?v=1S6DJmW_D7I">🇷🇺 Web Animation <br/><span> RIT 2019</span></a>
-				<a class="card" href="https://www.youtube.com/watch?v=mgKfqtYWD2M">🇷🇺 BEM Design <br/><span> Moscow Dribbble Meetup 2018</span></a>
-			</div>
-		</section>
-
-		<section class="section">
-			<h2>OpenSource</h2>
-			<div class="grid grid_ratio_1-1-1">
-				<a class="card" href="https://github.com/gazprom-neft/consta-uikit">Consta Design System</a>
-				<a class="card" href="http://whitepaper.tools/">whitepaper</a>
-			</div>
-		</section>
-
-		<footer class="footer">made by Julia Miocene</footer>
+		<div class="about">
+			<p>Making the world better as a Product Designer and crazier as a Pure CSS Animator. Speaking about CSS and designing in the browser. GoogleDevExpert, podcast co-host and cat lover.</p>
+			<p>Almost 10 years I create products for people and businesses. Currently I’m working at <a href="https://yandex.com">Yandex</a> as Lead Product Designer. Based in Tbilisi, Georgia.</p>
+		</div>
+		<div class="links">
+			<p><a href="https://codepen.io/miocene">Check out my CSS Animations</a></p>
+			<p><a href="https://twitter.com/julia_miocene">Folow on Twitter</a></p>
+			<p><a href="https://www.youtube.com/channel/UCLqk9S0Xcyxp3iSKQDlC-Vg">Subscribe on YouTube</a></p>
+			<p><a href="www.linkedin.com/in/miocene">Connect on Linkedin</a></p>
+			<p><a href="https://github.com/Miocene">Nothing interesting at my GitHub</a></p>
+			<p><a href="https://www.twitch.tv/julia_miocene">Maybe I’ll Twitch something</a></p>
+			<p><a href="./Resume-Julia-Miocene.pdf">Download my CV</a></p>
+			<p><a href="mailto:julia.miocene@gmail.com">Or write me an email</a></p>
+		</div>
 	</body>
 </html>
