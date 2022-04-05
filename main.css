@@ -22,6 +22,7 @@ body {
   font-weight: 300;
   font-size: var(--text-size-m);
   color: hsl(var(--accent-one));
+  overflow-x: hidden;
 }
 
 .header-wrap {
