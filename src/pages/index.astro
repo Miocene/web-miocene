@@ -1,0 +1,67 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Card from "@/components/Card.astro";
+const allPosts = await getCollection("posts");
+const allDemos = await getCollection("demos");
+const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+
+// Sort posts by date in descending order (newest first)
+const sortedPosts = allPosts.sort(
+  (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate)
+);
+const sortedDemos = allDemos.sort(
+  (a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate)
+);
+---
+
+<BaseLayout bodyClass="main-page">
+  <h1>Hey there, CSS friend!<br/>Keep the web weird and creative</h1>
+
+  <main class="post-list">
+    <div class="post-mini-list">
+      {
+        sortedDemos.slice(0, 6).map((demo) => (
+          <article class="card card_mini">
+            <Image src={demo.data.cover} alt="alts" />
+            <a href={"/demos/" + demo.slug} class="card__link" aria-label={demo.data.title}></a>
+          </article>
+        ))
+      }
+    </div>
+    {
+      sortedPosts.map((post) => (
+        <Card
+          url={"/posts/" + post.slug}
+          title={post.data.title}
+          description={post.data.description}
+          alt={post.data.title}
+          lightImage={post.data.lightImage}
+          darkImage={post.data.darkImage}
+          tags={post.data.tags}
+        />
+      ))
+    }
+    <div class="post-mini-list">
+      {
+        sortedDemos.slice(6, 12).map((demo) => (
+          <article class="card card_mini">
+            <Image src={demo.data.cover} alt="alts" />
+            <a href={"/demos/" + demo.slug} class="card__link" aria-label={demo.data.title}></a>
+          </article>
+        ))
+      }
+    </div>
+  </main>
+
+  <!-- <ol role="list" class="flex flex-wrap gap-3">
+    {
+      tags.map((tag) => (
+        <li class="inline-flex items-center uppercase mx-auto hover:text-blue-500 text-xs font-medium text-black">
+          <a href={`/tags/${tag}`}>{tag}</a>
+        </li>
+      ))
+    }
+  </ol> -->
+</BaseLayout>
