@@ -1,0 +1,21 @@
+.tag-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--tag-color);
+  border-radius: 99rem;
+  font-size: var(--font-size-small);
+  color: var(--tag-color);
+  cursor: pointer;
+  transition: color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1),
+              border-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1),
+              outline 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
