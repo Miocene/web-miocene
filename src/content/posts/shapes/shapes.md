@@ -1,7 +1,7 @@
 ---
 pubDate: 2023-07-02
 title: CSS Shapes
-description: "A growing collection of shape tricks, all crafted using pure CSS. Each shape comes with code snippets, so you can easily integrate them and experiment with different approaches."
+description: "A growing collection of shape tricks, all crafted using pure CSS. Each shape comes with code snippets."
 lightImage: "./shapes-light.png"
 darkImage: "./shapes-dark.png"
 tags: ["CSS art", "Collection"]

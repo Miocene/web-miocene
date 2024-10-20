@@ -1,7 +1,7 @@
 ---
 pubDate: 2024-10-13
 title: 3D Cube With CSS
-description: "This tutorial will take you step by step through crafting basic 3D objects — no special tools required. Get ready to create, experiment, and even design your own cubic characters!"
+description: "This tutorial will take you step by step through crafting basic 3D objects — no special tools required."
 lightImage: "./3d-cube-with-css-light.png"
 darkImage: "./3d-cube-with-css-dark.png"
 tags: ["3D", "CSS art"]

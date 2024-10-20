@@ -23,25 +23,22 @@ const { title, url, description, lightImage, darkImage, tags } = Astro.props;
   .card {
     position: relative;
     min-height: 64px;
+    transition: translate 0.2s cubic-bezier(0.22, 0.61, 0.36, 1)
+  }
+  
+  .card:not(.card_mini) {
     padding: 24px 24px 32px;
     text-align: center;
-    text-wrap: balance
+    text-wrap: balance;
     box-sizing: border-box;
     background: linear-gradient(0deg, transparent 0 32px, var(--color-bg-secondary) 32px calc(100% - 32px), transparent 0);
     border-image-source: var(--cquircle);
     border-image-slice: 32 32 32 32;
     border-image-width: 32px;
-    transition: translate 0.2s cubic-bezier(0.22, 0.61, 0.36, 1)
   }
 
   .card:has(a):hover, .card:focus-within {
     translate: 0 -4px;
-  }
-
-  .card_mini {
-    max-width: 200px;
-    aspect-ratio: 1/1;
-    padding: 0;
   }
 
   .card > * {
@@ -62,6 +59,8 @@ const { title, url, description, lightImage, darkImage, tags } = Astro.props;
   }
 
   .card_mini img {
+    height: 100%;
+    object-fit: contain;
     filter: grayscale(1);
   }
 
