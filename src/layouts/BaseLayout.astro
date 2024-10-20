@@ -1,0 +1,54 @@
+---
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+const { bodyClass } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Julia Miocene</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		
+		<meta name="title" content="Julia Miocene">
+		<meta name="description" content="Personal page">
+		<meta name="robots" content="index, follow">
+
+		<link rel="icon" href="/favicon.ico">
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="/favicon180.png">
+		<link rel="canonical" href="https://miocene.io/">
+
+		<meta property="og:url" content="https://miocene.io/">
+		<meta property="og:title" content="Julia Miocene">
+		<meta property="og:description" content="Personal page">
+		<meta itemprop="description" content="Personal page">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://miocene.io/og.png">
+		<meta property="og:locale" content="en_EN">
+		<meta property="og:site_name" content="Julia Miocene">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://miocene.io/">
+		<meta property="twitter:title" content="Julia Miocene">
+		<meta property="twitter:description" content="Personal page">
+		<meta property="twitter:image" content="https://miocene.io/og.png">
+		<meta property="twitter:card" content="summary">
+		<meta property="twitter:site" content="@julia_miocene">
+	</head>
+  <body class={ bodyClass }>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+
+  <script src="../../public/prism.js"></script>
+</html>
+<style is:global>
+  @import url("../styles/global.css");
+  @import url("../../public/prism.css");
+</style>

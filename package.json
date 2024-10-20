@@ -1,0 +1,23 @@
+{
+  "name": "@miocene/web-miocene",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/markdoc": "^0.11.5",
+    "@astrojs/mdx": "^3.1.5",
+    "@astrojs/preact": "^3.5.3",
+    "@astrojs/sitemap": "^3.1.6",
+    "astro": "^4.16.6",
+    "astro-custom-toc": "^2.0.35",
+    "preact": "^10.23.2",
+    "typescript": "^5.6.2"
+  }
+}

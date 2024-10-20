@@ -1,0 +1,51 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #161616;
+    --color-bg-secondary: #202020;
+    --color-bg-code: rgba(255, 255, 255, 0.1);
+    
+    --color-border: rgba(255, 255, 255, 0.2);
+    
+    --color-text-primary: #ffffff;
+    --color-text-secondary: rgba(255, 255, 255, 0.5);
+
+    --button-primary-bg: #ffffff;
+    --button-primary-hover-bg: #ffffff;
+    --button-primary-text: #202020;
+    --button-primary-hover-text: #202020;
+    --button-secondary-bg: transparent;
+    --button-secondary-hover-bg: transparent;
+    --button-secondary-text: #ffffff;
+    --button-secondary-hover-text: #FF5E5B;
+
+    --tag-color: #FF5E5B;
+
+    --cquircle: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjUiIHZpZXdCb3g9IjAgMCA2NSA2NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMzJDMCAyMC43OTg5IDAgMTUuMTk4NCAyLjE3OTg3IDEwLjkyMDJDNC4wOTczNCA3LjE1Njk1IDcuMTU2OTUgNC4wOTczNCAxMC45MjAyIDIuMTc5ODdDMTUuMTk4NCAwIDIwLjc5OSAwIDMyIDBIMzNDNDQuMjAxMSAwIDQ5LjgwMTYgMCA1NC4wNzk4IDIuMTc5ODdDNTcuODQzMSA0LjA5NzM0IDYwLjkwMjcgNy4xNTY5NSA2Mi44MjAxIDEwLjkyMDJDNjUgMTUuMTk4NCA2NSAyMC43OTkgNjUgMzJWMzNDNjUgNDQuMjAxMSA2NSA0OS44MDE2IDYyLjgyMDEgNTQuMDc5OEM2MC45MDI3IDU3Ljg0MzEgNTcuODQzMSA2MC45MDI3IDU0LjA3OTggNjIuODIwMUM0OS44MDE2IDY1IDQ0LjIwMSA2NSAzMyA2NUgzMkMyMC43OTg5IDY1IDE1LjE5ODQgNjUgMTAuOTIwMiA2Mi44MjAxQzcuMTU2OTUgNjAuOTAyNyA0LjA5NzM0IDU3Ljg0MzEgMi4xNzk4NyA1NC4wNzk4QzAgNDkuODAxNiAwIDQ0LjIwMSAwIDMzVjMyWiIgZmlsbD0iIzIwMjAyMCIvPgo8L3N2Zz4K");
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg-primary: #F5F5F5;
+    --color-bg-secondary: #EDEDED;
+    --color-bg-code: rgba(34, 34, 34, 0.1);
+    
+    --color-border: rgba(34, 34, 34, 0.1);
+    
+    --color-text-primary: #222222;
+    --color-text-secondary: rgba(34, 34, 34, 0.7);
+
+    --button-primary-bg: #161616;
+    --button-primary-hover-bg: #FF5E5B;
+    --button-primary-text: #ffffff;
+    --button-primary-hover-text: #FF5E5B;
+    --button-secondary-bg: transparent;
+    --button-secondary-hover-bg: #FF5E5B;
+    --button-secondary-text: #161616;
+    --button-secondary-hover-text: #FF5E5B;
+
+    --tag-color: #FF5E5B;
+
+    --cquircle: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNjUiIHZpZXdCb3g9IjAgMCA2NSA2NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMzJDMCAyMC43OTg5IDAgMTUuMTk4NCAyLjE3OTg3IDEwLjkyMDJDNC4wOTczNCA3LjE1Njk1IDcuMTU2OTUgNC4wOTczNCAxMC45MjAyIDIuMTc5ODdDMTUuMTk4NCAwIDIwLjc5OSAwIDMyIDBIMzNDNDQuMjAxMSAwIDQ5LjgwMTYgMCA1NC4wNzk4IDIuMTc5ODdDNTcuODQzMSA0LjA5NzM0IDYwLjkwMjcgNy4xNTY5NSA2Mi44MjAxIDEwLjkyMDJDNjUgMTUuMTk4NCA2NSAyMC43OTkgNjUgMzJWMzNDNjUgNDQuMjAxMSA2NSA0OS44MDE2IDYyLjgyMDEgNTQuMDc5OEM2MC45MDI3IDU3Ljg0MzEgNTcuODQzMSA2MC45MDI3IDU0LjA3OTggNjIuODIwMUM0OS44MDE2IDY1IDQ0LjIwMSA2NSAzMyA2NUgzMkMyMC43OTg5IDY1IDE1LjE5ODQgNjUgMTAuOTIwMiA2Mi44MjAxQzcuMTU2OTUgNjAuOTAyNyA0LjA5NzM0IDU3Ljg0MzEgMi4xNzk4NyA1NC4wNzk4QzAgNDkuODAxNiAwIDQ0LjIwMSAwIDMzVjMyWiIgZmlsbD0iI0VERURFRCIvPgo8L3N2Zz4K");
+  }
+}

@@ -1,0 +1,115 @@
+---
+import { Image } from "astro:assets";
+const { title, url, description, lightImage, darkImage, tags } = Astro.props;
+---
+
+<article class="card card_default" id="3d-cube-with-css">
+  <Image src={darkImage} alt="alt" class="dark" />
+  <Image src={lightImage} alt="alt" class="light" />
+
+  <h2>{ title }</h2>
+  <p>{ description }</p>
+  <div class="tag-list">
+    {
+      tags.map((tag) => (
+      <div class="tag">{tag}</div>
+      ))
+    }
+  </div>
+  <a href={ url } class="card__link" aria-label={ title }></a>
+</article>
+
+<style is:global>
+  .card {
+    position: relative;
+    min-height: 64px;
+    padding: 24px 24px 32px;
+    text-align: center;
+    text-wrap: balance
+    box-sizing: border-box;
+    background: linear-gradient(0deg, transparent 0 32px, var(--color-bg-secondary) 32px calc(100% - 32px), transparent 0);
+    border-image-source: var(--cquircle);
+    border-image-slice: 32 32 32 32;
+    border-image-width: 32px;
+    transition: translate 0.2s cubic-bezier(0.22, 0.61, 0.36, 1)
+  }
+
+  .card:has(a):hover, .card:focus-within {
+    translate: 0 -4px;
+  }
+
+  .card_mini {
+    max-width: 200px;
+    aspect-ratio: 1/1;
+    padding: 0;
+  }
+
+  .card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    transition: scale 0.5s cubic-bezier(0.22, 0.61, 0.36, 1),
+                filter 0.25s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .card:not(.card_mini) img {
+    width: calc(100% + 32px);
+    margin: -16px -16px -90px;
+  }
+
+  .card_mini img {
+    filter: grayscale(1);
+  }
+
+  .card:not(.card_mini):has(a):hover img {
+    scale: 1.1;
+  }
+
+  .card_mini:has(a):hover img {
+    filter: grayscale(0);
+  }
+
+  .card h2 {
+    margin: 0;
+  }
+
+  .card p {
+    font-size: var(--font-size-small);
+  }
+
+  .card__link {
+    position: absolute !important;
+    display: block;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+  }
+
+  .card_mini:has(.card__link:focus-visible) {
+    z-index: 1;
+  }
+
+  .card__link:focus-visible {
+    outline-offset: 4px;
+    border-radius: 20px;
+  }
+
+  .card_mini .card__link:focus-visible {
+    border-radius: 13px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .card .light {
+      display: none;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .card .dark {
+      display: none;
+    }
+  }
+</style>
