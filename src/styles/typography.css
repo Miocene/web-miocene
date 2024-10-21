@@ -55,7 +55,7 @@ code:not(.example__code code) {
 }
 
 p {
-  font-weight: 200;
+  font-weight: var(--font-weight);
   margin-bottom: 20px;
   line-height: 150%;
 }
