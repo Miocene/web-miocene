@@ -129,6 +129,7 @@ ul {
 
 .example__view {
   position: relative;
+  overflow: hidden;
 }
 
 .example__code {
@@ -144,6 +145,23 @@ ul {
 
 .example {
   accent-color: light-dark(#333, #fff);
+}
+
+@media (width < 600px) {
+  .example {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.example-grid .example {
+  margin: 0;
 }
 
 .toc #contents {
