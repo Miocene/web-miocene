@@ -14,7 +14,7 @@ html {
   color: var(--color-text-primary);
   font-family: "IBM Plex Sans", sans-serif;
   font-size: var(--font-size-medium);
-  font-weight: 300;
+  font-weight: var(--font-weight);
   font-style: normal;
   line-height: 150%;
   font-feature-settings: "lnum" on;
