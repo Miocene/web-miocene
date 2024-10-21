@@ -3,7 +3,7 @@
     <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.5876C0 6.07414 5.28019 0.793945 11.7936 0.793945V1.55778C5.70205 1.55778 0.763837 6.49599 0.763837 12.5876C0.763837 18.6792 5.70205 23.6174 11.7936 23.6174V24.3812C5.28019 24.3812 0 19.101 0 12.5876ZM24.0004 13.0001C24.0004 19.7413 18.5356 25.2062 11.7943 25.2062V24.4423C18.1137 24.4423 23.2366 19.3194 23.2366 13.0001C23.2366 6.68066 18.1137 1.55778 11.7943 1.55778V0.793945C18.5356 0.793945 24.0004 6.25881 24.0004 13.0001Z" fill="currentColor"/>
     </svg>
-    Julia Miocene
+    <span>Julia Miocene</span>
   </a>
   <ul class="social-links">
     <li>
@@ -64,6 +64,12 @@
     display: flex;
     gap: 8px;
     align-items: center;
+  }
+  
+  @media (width < 450px) {
+    .header__logo span {
+      display: none;
+    }
   }
 
   .header .link, .header .link:focus-visible {
