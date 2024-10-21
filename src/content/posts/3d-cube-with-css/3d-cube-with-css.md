@@ -43,11 +43,6 @@ We usually rotate something to see that it has volume. And we can do it in CSS! 
 </div>
 
 <style>
-  .example-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-  }
   .example1 .example__view,
   .example2 .example__view,
   .example3 .example__view {
@@ -122,11 +117,6 @@ But it looks like shrinking without `perspective` [property](https://developer.m
 </div>
 
 <style>
-  .example-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-  }
   .example4 .example__view,
   .example5 .example__view,
   .example6 .example__view {
@@ -430,15 +420,6 @@ We need to define their anchor points to place all the elements in the right pla
 </div>
 
 <style>
-  .example-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  .example-grid .example {
-    margin: 0;
-  }
   .example12 .example__view,
   .example13 .example__view {
     aspect-ratio: 1/1;
@@ -551,15 +532,6 @@ Now, let’s define anchor points for all the cube faces and rotate them!
 </div>
 
 <style>
-  .example-grid1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  .example-grid1 .example {
-    margin: 0;
-  }
   .example-grid1 .example__view {
     aspect-ratio: 1/1;
     perspective: 10000px;
