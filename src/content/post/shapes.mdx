@@ -1,0 +1,118 @@
+---
+pubDate: 2023-07-02
+title: CSS Shapes
+description: "A growing collection of shape tricks, all crafted using pure CSS. Each shape comes with code snippets."
+lightImage: "./shapes/light-cover.png"
+darkImage: "./shapes/dark-cover.png"
+tags: ["CSS art", "Collection"]
+
+showToc: true
+---
+
+Hey there, CSS fans! It's a growing collection of shape tricks, all crafted using pure CSS. Each shape comes with code snippets, so you can easily integrate them and experiment with different approaches.
+
+There are many reasons to use CSS shapes instead of SVG, here you can find different examples and useful links.
+
+## Border radius
+
+This property is quite simple but very useful. Unfortunately, it cannot draw a squircle... ***yet***.
+
+import BorderRadiusDemo from './shapes/border-radius-demo.md';
+
+<BorderRadiusDemo />
+
+## Box-shadow
+
+✅ This property can help you to copy the shape of your block. 
+
+✅ It copies a shape even if the block doesn't have a background.
+
+✅ It draws a shape both inside and ouside of the block.
+
+✅ The shadow could be bigger or smaller than the original block. It controls by the spread value `box-shadow: x y blur spread color`.
+
+✅ There could be any amount of shadows.
+
+⚠️ It copies the shape of the root element. Chindren don't affect the shape of the shadow.
+
+❌ The shadow is not visible behind the root element even if it has no background.
+
+❌ Can't copy the complex shape.
+
+[Pixelate image generator](https://fjolt.com/article/css-pixel-art-generator)
+
+import BoxShadowDemo from './shapes/box-shadow-demo.md';
+
+<BoxShadowDemo />
+
+## Drop shadow
+
+✅ This property can help you to copy the shape of your block.
+
+✅ Can't copy the complex shape.
+
+✅ There could be any amount of shadows.
+
+✅ The shadow is visible behind the root element.
+
+⚠️ It copies all the non-transparent pixels within this block.
+
+⚠️ It copies the shape of the root element and all the chindren inside.
+
+⚠️ Every next `drop-shadow` copies the shape of the original block and all the shadows before.
+
+❌ It draws a shape only ouside of the block.
+
+❌ The shadow could only be the same size as the original block.
+
+import DropShadowDemo from './shapes/drop-shadow-demo.md';
+
+<DropShadowDemo />
+
+## Mask
+
+Masks create a clipping region that defines which part of an element should be visible. Parts within the region are shown, while those outside are hidden. If you've eved used a `background` to draw a gradient, you already know how to use `mask`. There are the same family-propeties: `mask-image`, `mask-position`, `mask-size`, `mask-repeat`.
+
+import MaskDemo from './shapes/mask-demo.md';
+
+<MaskDemo />
+
+## Clip path
+
+Masks create a clipping region that defines which part of an element should be visible. Parts within the region are shown, while those outside are hidden.
+
+[Clip-path generator](https://bennettfeely.com/clippy/)
+
+[Clip-path stars generator](https://css-generators.com/starburst-shape/)
+
+[Clip-path wawes generator](https://css-generators.com/wavy-shapes/)
+
+[Clip-path polygons generator](https://css-generators.com/polygon-shape/)
+
+import ClipPathDemo from './shapes/clip-path-demo.md';
+
+<ClipPathDemo />
+
+## Background
+
+The most powerful property. You can create a world with just a gradient and one block!
+
+[Gradient patterns](https://css-pattern.com/)
+
+import BackgroundDemo from './shapes/background-demo.md';
+
+<BackgroundDemo />
+
+## Transform
+
+import TransformDemo from './shapes/transform-demo.md';
+
+<TransformDemo />
+
+## Border
+
+This approach is useful for blocks with no content and plain background.
+
+import BorderDemo from './shapes/border-demo.md';
+
+<BorderDemo />

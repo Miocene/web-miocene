@@ -31,3 +31,10 @@
   background-color: var(--button-secondary-hover-bg);
   color: var(--button-secondary-hover-text);
 }
+
+.button-secondary:focus-visible {
+  outline-color: var(--outline-color);
+  outline-style: solid;
+  outline-width: 3px;
+  outline-offset: 2px;
+}

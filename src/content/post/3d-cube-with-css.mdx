@@ -1,0 +1,126 @@
+---
+pubDate: 2024-10-13
+title: 3D Cube With CSS
+description: "This tutorial will take you step by step through crafting basic 3D objects — no special tools required."
+lightImage: "./3d-cube-with-css/light-cover.png"
+darkImage: "./3d-cube-with-css/dark-cover.png"
+tags: ["3D", "CSS art"]
+---
+
+Hey there, CSS fans! This is part of a series where we’ll boost our 3D skills from beginner to advanced. Today, we’re diving into how to create a 3D space and a basic 3D object using CSS.
+
+<details>
+  <summary>Watch video</summary>
+  
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/dgEHpkm0xTI?si=Uqux71cvzGKPHVfd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</details>
+
+
+## The web is flat
+
+We usually rotate something to see that it has volume. And we can do it in CSS! `rotate` [property](https://developer.mozilla.org/en-US/docs/Web/CSS/rotate) or `rotate()` [function](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate) can rotate blocks in all three dimensions: x, y, z.
+
+import Example1 from './3d-cube-with-css/example1.md';
+
+<Example1 />
+
+But it looks like shrinking without `perspective` [property](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective) or `perspective()` [function](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/perspective).
+
+import Example2 from './3d-cube-with-css/example2.md';
+
+<Example2 />
+
+Now, it looks like 3D, but it’s not. It’s a flat projection of a 3D transformation. And it’s ok if you need to transform only one object. But if you need to place a few objects into one 3D space — it won’t work.
+
+import Example3 from './3d-cube-with-css/example3.md';
+
+<Example3 />
+
+We can fix it using a `transform-style` [property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style). It says all the direct children of the block should live in one 3D space. **It’s not inheritable, so you need to apply this property to every parent element. Usually, I apply it to all the elements within my 3D scene.
+
+import Example4 from './3d-cube-with-css/example4.md';
+
+<Example4 />
+
+## Perspective
+
+We can use the `perspective` [property](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective) to change the distance between the user and the (0, 0, 0) point of your 3D scene.
+
+import Example5 from './3d-cube-with-css/example5.md';
+
+<Example5 />
+
+You can experiment with this number to find the best perspective for your scene. For most scenes, I prefer the default one.
+
+Since it’s a distance between the user and the (0, 0, 0) point of your 3D scene, the position of this point makes a big difference for the final picture.
+
+import Example6 from './3d-cube-with-css/example6.md';
+
+<Example6 />
+
+## Basic 3D object
+
+It’s time for our first 3D object! Every 3D editor starts from a sphere, cube, or pyramid as a basic shape. However, since CSS is not a 3D tool, we have no 3D objects at all. We need to create them from scratch. And the easiest one is a cube.
+
+The cube object consists of six faces. One div can create three faces: the element itself and two of its pseudo-elements. And we need one more div with its pseudo-elements.
+
+import Example7 from './3d-cube-with-css/example7.md';
+
+<Example7 />
+
+I keep the root element unchanged and place all the elements on top. 
+
+We need to define their anchor points to place all the elements in the right places. The anchor point controls the direction of the animation. In CSS, it is defined with the `transform-origin` [property](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin). You can use any units you want and place this point anywhere within or outside the block. You can even change the z-axis!
+
+import Example8 from './3d-cube-with-css/example8.md';
+
+<Example8 />
+
+Now, let’s define anchor points for all the cube faces and rotate them!
+
+import Example9 from './3d-cube-with-css/example9.md';
+
+<Example9 />
+
+## Make it prettier ✨
+
+Let’s make our cube prettier! To change the shades of the faces, we can use the `color-mix` [function](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix). I’ll mix the colors with the background color.
+
+import Example10 from './3d-cube-with-css/example10.md';
+
+<Example10 />
+
+## Make it smarter 🧠 
+
+Now, we can make this cube a little bit more universal. Let’s create three properties: x, y, and z, which are the cube’s width, height, and depth, and then apply them to our cube’s faces.
+
+Now you can change these numbers and see what happens ✨
+
+import Example11 from './3d-cube-with-css/example11.md';
+
+<Example11 />
+
+## Make it more creative 🐔
+
+Having a universal cube is a great power. Now we can create anything! Do you know the [Minecraft](https://www.google.com/search?q=Minecraft) game? With the cubes, you can make a world.
+
+But let’s start with an animal. I’ll take a chicken, but you can create any animal you want. I copy-paste the cubes N times and call them semantically. Then, I color them with the right colors and change dimensions.
+
+import Example12 from './3d-cube-with-css/example12.md';
+
+<Example12 />
+
+Then, I place these cubes properly to get the final chicken.
+
+<div style="margin-bottom: 40px">
+  <p class="codepen" data-height="500" data-default-tab="html,result" data-slug-hash="abgWGPy" data-pen-title="Chicken. Complete 3D CSS Guide Part 1" data-user="miocene" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 40px 0;">
+    <span>See the Pen <a href="https://codepen.io/miocene/pen/abgWGPy">
+    Chicken. Complete 3D CSS Guide Part 1</a> by Julia Miocene (<a href="https://codepen.io/miocene">@miocene</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+Today, we learned how to create a 3D space, a basic 3D object, and a cubic animal. Share your animals on your favorite social media and tag me @julia_miocene.
+
+Don’t forget to keep the web weird.

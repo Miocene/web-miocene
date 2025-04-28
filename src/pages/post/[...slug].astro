@@ -1,0 +1,83 @@
+---
+import { Image } from 'astro:assets';
+import { type CollectionEntry, getCollection } from 'astro:content';
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+
+import { render } from 'astro:content';
+
+interface Props {
+	entry: CollectionEntry<'post'>;
+}
+
+// This is a dynamic route that generates a page for every Markdown file in src/content/
+// Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
+// https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
+export async function getStaticPaths() {
+	const post = await getCollection('post');
+	return post.map((entry) => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout bodyClass="post-page" title={entry.data.title} description={entry.data.description}>
+  <Image src={entry.data.darkImage} alt="alt" class="post-cover dark" />
+  <Image src={entry.data.lightImage} alt="alt" class="post-cover light" />
+  
+  <h1>
+    {entry.data.title}
+    <FormattedDate date={entry.data.pubDate} />
+  </h1>
+  
+  <main>
+    <article>
+      <Content />
+    </article>
+  </main>
+</BaseLayout>
+
+<style is:global>
+  .post-cover {
+    position: relative;
+    max-width: 250px; height: auto;
+    left: 50%;
+    margin-bottom: -170px;
+    margin-top: -50px;
+    mask-image: radial-gradient(black 50%, transparent);
+    translate: -50%;
+    z-index: -1;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .post-cover.light {
+      display: none;
+    }
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .post-cover.dark {
+      display: none;
+    }
+  }
+
+  details {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+  }
+  
+  details summary {
+    padding: 12px 20px;
+    cursor: pointer;
+  }
+  
+  details iframe {
+    display: block;
+    border-radius: 0 0 8px 8px;
+  }
+</style>

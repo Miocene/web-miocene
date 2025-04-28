@@ -83,12 +83,12 @@ article a, article a:visited {
 }
 .link:hover, .link:active,
 article a:hover, article a:active {
-  color: #FF5E5B;
-  text-decoration-color: rgba(255, 94, 91, 0.3);
+  color: var(--color-link);
+  text-decoration-color: color-mix(in srgb, var(--color-link) 70%, transparent);
 }
 .link:focus-visible,
 article a:focus-visible {
-  outline-color: #FF5E5B;
+  outline-color: var(--outline-color);
   outline-style: solid;
   outline-width: 3px;
   outline-offset: 2px;

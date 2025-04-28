@@ -5,6 +5,8 @@
 @import url("button.css");
 @import url("demo.css");
 
+@import url("../../public/prism.css");
+
 :root {
   color-scheme: light dark;
 }
@@ -115,6 +117,10 @@ ul {
 
 .link.social-links__linkedin:hover {
   color: #0A66C2;
+}
+
+.link.social-links__bluesky:hover {
+  color: #1185fe;
 }
 
 .example {
