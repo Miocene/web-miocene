@@ -1,16 +1,20 @@
 <div class="example example20">
-  <div class="example__view">
+  <div class="example__view" style="--color: #333;">
     <div class="cube">
       <div></div>
     </div>
-    <input type="color" id="colorInput" name="colorInput" value="#ffffff" onChange="updateColor(value)" />
+    <div class="controls">
+      <div class="color-picker">
+        <input type="color" value="333" />
+      </div>
+    </div>
   </div>
   <pre class="example__code"><code class="language-css">.cube {
-  --top-color:    color-mix(in srgb, var(--main-color) 100%, var(--background));
-  --front-color:  color-mix(in srgb, var(--main-color) 90%, var(--background));
-  --bottom-color: color-mix(in srgb, var(--main-color) 20%, var(--background));
-  --back-color:   color-mix(in srgb, var(--main-color) 60%, var(--background));
-  --side-color:   color-mix(in srgb, var(--main-color) 80%, var(--background));
+  --top-color:    color-mix(in srgb, var(--color) 100%, var(--background));
+  --front-color:  color-mix(in srgb, var(--color) 90%, var(--background));
+  --bottom-color: color-mix(in srgb, var(--color) 20%, var(--background));
+  --back-color:   color-mix(in srgb, var(--color) 60%, var(--background));
+  --side-color:   color-mix(in srgb, var(--color) 80%, var(--background));
   background: var(--bottom-color);
 }
 .cube::before     { background: var(--side-color); }
@@ -21,11 +25,6 @@
 </div>
 
 <style>
-  #colorInput {
-    position: absolute;
-    bottom: 20px; left: 50%;
-    translate: -50%;
-  }
   .example20 .example__view {
     height: 300px;
     transform-style: preserve-3d;
@@ -42,11 +41,11 @@
     translate: -50% 0;
     animation: example20 7s linear infinite;
 
-    --top-color: color-mix(in srgb, var(--main-color) 100%, var(--color-bg-primary));
-    --front-color: color-mix(in srgb, var(--main-color) 90%, var(--color-bg-primary));
-    --bottom-color: color-mix(in srgb, var(--main-color) 20%, var(--color-bg-primary));
-    --back-color: color-mix(in srgb, var(--main-color) 60%, var(--color-bg-primary));
-    --side-color: color-mix(in srgb, var(--main-color) 80%, var(--color-bg-primary));
+    --top-color: color-mix(in srgb, var(--color) 100%, var(--color-bg-primary));
+    --front-color: color-mix(in srgb, var(--color) 90%, var(--color-bg-primary));
+    --bottom-color: color-mix(in srgb, var(--color) 20%, var(--color-bg-primary));
+    --back-color: color-mix(in srgb, var(--color) 60%, var(--color-bg-primary));
+    --side-color: color-mix(in srgb, var(--color) 80%, var(--color-bg-primary));
     background: var(--bottom-color);
   }
   @keyframes example20 {
@@ -54,12 +53,12 @@
   }
   @media (prefers-color-scheme: dark) {
     .example20 .cube {
-      --main-color: #ffffff;
+      --color: #ffffff;
     }
   }
   @media (prefers-color-scheme: light) {
     .example20 .cube {
-      --main-color: #333333;
+      --color: #333333;
     }
   }
   .example20 .cube::before,
@@ -98,12 +97,3 @@
     rotate: x -90deg;
   }
 </style>
-
-<script>
-  const colorExample = document.querySelector('.example20 .cube');
-  const colorInput = document.querySelector('#colorInput');
-  function updateColor(value) {
-    colorExample.setAttribute('style',`--main-color: ${value}`);
-  }
-  colorInput.setAttribute('value', getComputedStyle(colorExample).getPropertyValue('--main-color'))
-</script>

@@ -42,6 +42,21 @@ const { Content } = await render(entry);
   </main>
 </BaseLayout>
 
+<script>
+  const colorInput = document.querySelectorAll('.controls .color-picker input');
+  
+  colorInput.forEach(item => {
+    item.addEventListener('input', (event) => {
+      const inputElement = event.target;
+      const exampleElement = inputElement.parentElement.parentElement.parentElement;
+      const color = inputElement.value;
+
+      exampleElement.setAttribute('style',`--color: ${color}`);
+      inputElement.setAttribute('value', color);
+    });
+  });
+</script>
+
 <style is:global>
   .post-cover {
     position: relative;

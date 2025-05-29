@@ -4,12 +4,21 @@
       <div></div>
     </div>
     <div class="controls">
-      <input class="range" type="range" id="xSize" name="xSize" min="50" max="200" value="100"
-            onchange="updateSize()" />
-      <input class="range" type="range" id="ySize" name="ySize" min="50" max="200" value="100"
-            onchange="updateSize()" />
-      <input class="range" type="range" id="zSize" name="zSize" min="10" max="150" value="100"
-            onchange="updateSize()" />
+      <label>
+        width
+        <input class="range" type="range" id="xSize" name="xSize" min="50" max="200" value="100"
+          oninput="updateSize()" />
+      </label>
+      <label>
+        depth
+        <input class="range" type="range" id="ySize" name="ySize" min="50" max="200" value="100"
+          oninput="updateSize()" />
+      </label>
+      <label>
+        height
+        <input class="range" type="range" id="zSize" name="zSize" min="10" max="150" value="100"
+          oninput="updateSize()" />
+      </label>
     </div>
   </div>
   
@@ -22,16 +31,6 @@
 </div>
 
 <style>
-  .example21 .controls {
-    position: absolute;
-    bottom: 20px; left: 50%;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    max-width: 100%;
-    width: max-content;
-    translate: -50%;
-  }
   .example21 .example__view {
     height: 300px;
     transform-style: preserve-3d;
@@ -42,10 +41,10 @@
     content: '';
     position: absolute;
     top: 50%; left: 50%;
-    transform-origin: top center;
+    transform-origin: center;
     transform-style: preserve-3d;
     transform: rotateX(75deg) rotateZ(210deg);
-    translate: -70% 40%;
+    translate: -50% calc(-50% + var(--z) / 4);
 
     --x: 100px; --y: 100px; --z: 100px;
     width: var(--x); height: var(--y);

@@ -1,18 +1,17 @@
 <div class="example example9" style="--perspective: 500px">
   <div class="example__view">
     <div class="block"></div>
-    <input class="range" type="range" id="perspective" name="perspective" min="150" max="1000"
-           onchange="updatePerspective(this.value)" />
+    <div class="controls">
+      <label>
+        perspective
+        <input class="range" type="range" id="perspective" name="perspective" min="150" max="1000"
+          oninput="updatePerspective(this.value)" />
+      </label>
+    </div>
   </div>
 </div>
 
 <style>
-  .example9 .range {
-    position: absolute;
-    bottom: 16px; left: 50%;
-    translate: -50%;
-    z-index: 999;
-  }
   .example9 .example__view {
     height: 300px;
     transform-style: preserve-3d;
