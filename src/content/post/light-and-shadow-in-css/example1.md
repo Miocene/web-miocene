@@ -177,7 +177,7 @@
     </div>
     <div class="controls">
       <label>
-        softnes
+        softness
         <input class="range" type="range" id="E1softnes" name="E1softnes" min="0" max="100" value="50"
           oninput="updateShape1()" />
       </label>

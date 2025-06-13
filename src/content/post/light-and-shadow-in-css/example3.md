@@ -182,7 +182,7 @@
           oninput="updateShape3()" />
       </label>
       <label>
-        softnes
+        softness
         <input class="range" type="range" id="E3softnes" name="E3softnes" min="0" max="100" value="50"
           oninput="updateShape3()" />
       </label>
