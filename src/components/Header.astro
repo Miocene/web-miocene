@@ -65,6 +65,16 @@
     margin: auto;
     justify-content: space-between;
     line-height: 100%;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    transition: background-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1),
+                padding 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  .header.sticky {
+    background-color: color-mix(in srgb, var(--color-bg-primary), transparent 10%);
+    padding: 16px 0;
   }
 
   .header__logo {
@@ -85,3 +95,14 @@
     outline-offset: 8px;
   }
 </style>
+
+<script>
+  const header = document.querySelector("header.header")
+  console.log(header)
+  const observer = new IntersectionObserver( 
+    ([e]) => e.target.classList.toggle("sticky", e.intersectionRatio < 1),
+    { threshold: [1] }
+  );
+
+  observer.observe(header);
+</script>

@@ -81,9 +81,15 @@ const { Content } = await render(entry);
     }
   }
 
+  .post-page img:not(.post-cover) {
+    max-width: 100%;
+    height: auto;
+  }
+
   details {
     border: 1px solid var(--color-border);
     border-radius: 8px;
+    margin-bottom: 20px;
   }
   
   details summary {
