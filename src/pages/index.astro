@@ -57,5 +57,15 @@ const demos = (await getCollection('demo')).sort(
         ))
       }
     </div>
+    <div class="post-mini-list">
+      {
+        demos.slice(12, 18).map((demo) => (
+          <article class="card card_mini">
+            <Image src={demo.data.cover} alt="alts" />
+            <a href={`/demo/${demo.id}`} class="card__link" aria-label={demo.data.title}></a>
+          </article>
+        ))
+      }
+    </div>
   </main>
 </BaseLayout>
