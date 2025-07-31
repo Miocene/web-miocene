@@ -2,5 +2,22 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Not Found" description="404 Error — this page was not found">
+<BaseLayout bodyClass={ "error-page" }>
+  <h1>404</h1>
+  <p class="lead">this page does not exist</p>
 </BaseLayout>
+
+<style is:global>
+  .error-page {
+    --font-size-h1: 250px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    .lead {
+      font-size: 40px;
+    }
+  }
+</style>

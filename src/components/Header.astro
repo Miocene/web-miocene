@@ -68,13 +68,15 @@
     position: sticky;
     top: -1px;
     z-index: 2;
-    transition: background-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1),
-                padding 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition-property: padding, background-color, backdrop-filter;
   }
 
   .header.sticky {
     background-color: color-mix(in srgb, var(--color-bg-primary), transparent 10%);
     padding: 16px 0;
+    backdrop-filter: blur(1vw);
   }
 
   .header__logo {
