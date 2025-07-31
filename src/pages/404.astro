@@ -1,23 +1,64 @@
 ---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Component Imports
+import Card from '../components/Card.astro';
+
+// Content Fetching: List four most recent posts
+const posts = (await getCollection('post')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const demos = (await getCollection('demo')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 ---
 
 <BaseLayout bodyClass={ "error-page" }>
   <h1>404</h1>
-  <p class="lead">this page does not exist</p>
+  <p>Looks like you've floated into the void — <strong>this page doesn’t exist</strong> in this weird little corner of the web.</p>
+  <p>While you’re here, maybe you’d like to see one of the latest posts:</p>
+
+  <main class="post-list">
+    <div class="post-mini-list">
+      {
+        demos.slice(0, 6).map((demo) => (
+          <article class="card card_mini">
+            <Image src={demo.data.cover} alt="alts" />
+            <a href={`/demo/${demo.id}`} class="card__link" aria-label={demo.data.title}></a>
+          </article>
+        ))
+      }
+    </div>
+    {
+      posts.slice(0, 2).map((post) => (
+        <Card
+          url={`/post/${post.id}`}
+          title={post.data.title}
+          description={post.data.description}
+          alt={post.data.title}
+          lightImage={post.data.lightImage}
+          darkImage={post.data.darkImage}
+          tags={post.data.tags}
+        />
+      ))
+    }
+  </main>
 </BaseLayout>
 
 <style is:global>
   .error-page {
-    --font-size-h1: 250px;
+    /* 120 - 250 */
+    --font-size-h1: clamp(7.5rem, 4.7917rem + 14.4444vw, 15.625rem);
     text-align: center;
 
     h1 {
       margin-bottom: 0;
     }
 
-    .lead {
-      font-size: 40px;
+    .post-list {
+      margin-top: 80px;
     }
   }
 </style>

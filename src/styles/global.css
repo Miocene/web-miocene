@@ -29,7 +29,8 @@ body {
   padding: 0 32px 40px;
 }
 
-.main-page {
+.main-page,
+.error-page {
   max-width: 970px;
 }
 

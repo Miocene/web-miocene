@@ -1,12 +1,9 @@
 :root {
   --font-size-code: 14px;
   --font-size-small: 16px;
-  /* 16 - 20 */
-  /* --font-size-medium: clamp(1rem, 0.9457rem + 0.3478vw, 1.25rem); */
   --font-size-medium: 18px;
-  /* 40 - 90 */
-  /* font-size: clamp(2.5rem, 1.8207rem + 4.3478vw, 5.625rem); */
-  --font-size-h1: 60px;
+  /* 48 - 60 */
+  --font-size-h1: clamp(3rem, 2.75rem + 1.3333vw, 3.75rem);
   --font-size-h2: 32px;
 }
 
