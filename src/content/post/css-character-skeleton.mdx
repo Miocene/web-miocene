@@ -1,0 +1,109 @@
+---
+pubDate: 2025-08-10
+title: "Skeleton: Make Your CSS Walk"
+description: "Make your CSS characters move like they mean it. Nest joints, set pivot points, and build a skeleton that does the heavy lifting."
+lightImage: "./css-character-skeleton/light-cover.png"
+darkImage: "./css-character-skeleton/dark-cover.png"
+tags: ["3D", "CSS art"]
+---
+
+Hey there, CSS fans! This is the third part of a 3D series. The first one is [here](/post/3d-cube-with-css), the second is [here](/post/light-and-shadow-in-css), start from there if you missed any of them.
+
+Before your character takes a single step, there’s one thing it absolutely needs: a **skeleton**.
+
+In CSS animation, the skeleton isn’t bones and cartilage — it’s **HTML structure and `transform-origin`**. It’s the thing that makes your character move like a character and not like a stack of divs having an existential crisis.
+
+<details>
+  <summary>Watch video</summary>
+  
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/fv0-fwSKbsk?si=6r3zy9BkU-qrXr_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+</details>
+
+## Why Your Character Needs a Skeleton
+
+Imagine animating a chicken. You want it to jump. You’ve already [built it](/post/3d-cube-with-css#make-it-more-creative), [colored it](/post/light-and-shadow-in-css#shadows-on-the-object), and now… it’s time to move.
+
+Without a skeleton, that means animating **each part** of the chicken individually. The head, the wings, the legs — all getting their own keyframes. It’s like micromanaging limbs in five timelines at once.
+
+import Example1 from './css-character-skeleton/example1.md';
+
+<Example1 />
+
+Now imagine that chicken needs to dance. _No thanks._
+
+A proper HTML skeleton saves you from this nightmare. It turns chaos into structure, and lets you focus on how your character moves — not how to keep it from falling apart.
+
+## The Chicken's Skeleton
+
+Let’s break down our chicken’s structure. Start from the body, then nest all the connected parts — like joints in real anatomy.
+
+import Example2 from './css-character-skeleton/example2.md';
+
+<Example2 />
+
+Each moving part is **nested inside** the one it’s attached to. Shoulder inside the body, arm inside the shoulder, hand inside the arm, finger inside the hand, and so on.
+
+Want to add a hat? Drop it in the head element. A sword? Goes in the hand element. The HTML _is_ the skeleton.
+
+## Let’s talk joints
+
+Every animated element transforms (rotates) from one pont. In CSS, that point is `transform-origin`.
+
+By default, it’s in the center of the element. But for a character, that’s usually wrong. Your chicken’s wing doesn’t flap from the middle. You’ll need to [manually set the anchor point](/post/3d-cube-with-css#basic-3d-object) — usually at the joint.
+
+- **Rounded** character joints are circles.
+- **Cubic** character joints are corner or center points.
+- **Realistic** character joints are spheric.
+
+import Example3 from './css-character-skeleton/example3.md';
+
+<Example3 />
+
+Position `transform-origin` based on **how the character would move in real life**. It sounds like overkill — it’s not. It’s what makes movement feel *natural*.
+
+## Animation Magic
+
+Here’s the cool part: when you nest joints correctly, you only have to animate **one thing**. If you don’t nest? You’re stuck micromanaging every angle on every frame. Nightmare.
+
+Compare these two examples: the one you already saw before and the one with a proper nesting.
+
+import Example4 from './css-character-skeleton/example4.md';
+
+<Example4 />
+
+CSS animation doesn’t have to be hard — just **smart**.
+
+## Want That Wiggly, Spaghetti-Limb Vibe?
+
+Want spagetti movement? Here’s a trick: create more joints for each body parts. I did it for a [mosquito nose](/demo/mosquito). It consists of a few joints connecting small nose parts. Nest them and place their `transform-origin` like with a normal character, and suddenly... *you’ve got a sausage-shaped nose that bends like it’s made of rubber.*
+
+import Example5 from './css-character-skeleton/example5.md';
+
+<Example5 />
+
+import Example7 from './css-character-skeleton/example7.md';
+
+<Example7 />
+
+The more elements you add, the more rubbery it will look.
+
+## Demo Time
+
+Let’s look at the simple cube characters dancing — powered by proper skeletons and smart nesting.
+
+import Example6 from './css-character-skeleton/example6.md';
+
+<Example6 />
+
+## Takeaways
+
+- Nest your elements by anatomy
+- Set `transform-origin` like real joints
+- Use structure to simplify animation
+
+That’s the skeleton in a nutshell!
+
+Share your demos on your favorite social media and tag me @julia_miocene.
+
+Don’t forget to keep the web weird.

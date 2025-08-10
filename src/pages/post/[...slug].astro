@@ -85,16 +85,28 @@ const { Content } = await render(entry);
     max-width: 100%;
     height: auto;
   }
+  
+  .post-page {
+    scroll-behavior: smooth;
 
-  details {
+    h1, h2, h3, h4 {
+      scroll-margin-top: 80px;
+    }
+  }
+
+  details:not(.example__code) {
     border: 1px solid var(--color-border);
     border-radius: 8px;
     margin-bottom: 20px;
   }
   
-  details summary {
+  details:not(.example__code) summary {
     padding: 12px 20px;
+  }
+  
+  details summary {
     cursor: pointer;
+    font-family: "IBM Plex Sans", sans-serif;
   }
   
   details iframe {

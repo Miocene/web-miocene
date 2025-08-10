@@ -100,7 +100,6 @@
 
 <script>
   const header = document.querySelector("header.header")
-  console.log(header)
   const observer = new IntersectionObserver( 
     ([e]) => e.target.classList.toggle("sticky", e.intersectionRatio < 1),
     { threshold: [1] }
