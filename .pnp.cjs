@@ -63,7 +63,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hast-util-from-html", "npm:2.0.3"],\
             ["hast-util-to-text", "npm:4.0.2"],\
             ["import-meta-resolve", "npm:4.1.0"],\
-            ["js-yaml", "npm:4.1.0"],\
+            ["js-yaml", "npm:4.1.1"],\
             ["mdast-util-definitions", "npm:6.0.0"],\
             ["rehype-raw", "npm:7.0.0"],\
             ["rehype-stringify", "npm:10.0.1"],\
@@ -1306,7 +1306,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["github-slugger", "npm:2.0.0"],\
             ["html-escaper", "npm:3.0.3"],\
             ["http-cache-semantics", "npm:4.1.1"],\
-            ["js-yaml", "npm:4.1.0"],\
+            ["js-yaml", "npm:4.1.1"],\
             ["kleur", "npm:4.1.5"],\
             ["magic-string", "npm:0.30.17"],\
             ["magicast", "npm:0.3.5"],\
@@ -2673,10 +2673,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["js-yaml", [\
-        ["npm:4.1.0", {\
-          "packageLocation": "./.yarn/cache/js-yaml-npm-4.1.0-3606f32312-c7830dfd45.zip/node_modules/js-yaml/",\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/js-yaml-npm-4.1.1-86ec786790-ea2339c693.zip/node_modules/js-yaml/",\
           "packageDependencies": [\
-            ["js-yaml", "npm:4.1.0"],\
+            ["js-yaml", "npm:4.1.1"],\
             ["argparse", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
