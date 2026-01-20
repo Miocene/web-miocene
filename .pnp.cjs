@@ -1474,7 +1474,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cssesc", "npm:3.0.0"],\
             ["debug", "virtual:f9626122202f52c91b7e2e2bd32ffee6dcb17e453c7f5bd7fa150cc4a9583a9d2a3fdbd96844071e035b4663a19b3f9195e46eb422996f80f2b0dda3be8e1e12#npm:4.4.3"],\
             ["deterministic-object-hash", "npm:2.0.2"],\
-            ["devalue", "npm:5.6.0"],\
+            ["devalue", "npm:5.6.2"],\
             ["diff", "npm:5.2.0"],\
             ["dlv", "npm:1.1.3"],\
             ["dset", "npm:3.1.4"],\
@@ -2019,10 +2019,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["devalue", [\
-        ["npm:5.6.0", {\
-          "packageLocation": "./.yarn/cache/devalue-npm-5.6.0-38a367317d-9546037e6c.zip/node_modules/devalue/",\
+        ["npm:5.6.2", {\
+          "packageLocation": "./.yarn/cache/devalue-npm-5.6.2-2703e5baed-9d031092e3.zip/node_modules/devalue/",\
           "packageDependencies": [\
-            ["devalue", "npm:5.6.0"]\
+            ["devalue", "npm:5.6.2"]\
           ],\
           "linkType": "HARD"\
         }]\
