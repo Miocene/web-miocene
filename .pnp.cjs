@@ -1503,7 +1503,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sharp", "npm:0.34.5"],\
             ["shiki", "npm:3.19.0"],\
             ["smol-toml", "npm:1.5.2"],\
-            ["svgo", "npm:4.0.0"],\
+            ["svgo", "npm:4.0.1"],\
             ["tinyexec", "npm:1.0.2"],\
             ["tinyglobby", "npm:0.2.15"],\
             ["tsconfck", "virtual:f9626122202f52c91b7e2e2bd32ffee6dcb17e453c7f5bd7fa150cc4a9583a9d2a3fdbd96844071e035b4663a19b3f9195e46eb422996f80f2b0dda3be8e1e12#npm:3.1.6"],\
@@ -4732,10 +4732,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sax", [\
-        ["npm:1.4.3", {\
-          "packageLocation": "./.yarn/cache/sax-npm-1.4.3-8662917cfd-136a202eee.zip/node_modules/sax/",\
+        ["npm:1.5.0", {\
+          "packageLocation": "./.yarn/cache/sax-npm-1.5.0-d40bca2226-e143cbeb6c.zip/node_modules/sax/",\
           "packageDependencies": [\
-            ["sax", "npm:1.4.3"]\
+            ["sax", "npm:1.5.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5037,17 +5037,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["svgo", [\
-        ["npm:4.0.0", {\
-          "packageLocation": "./.yarn/cache/svgo-npm-4.0.0-2bdecef5cd-bddf57bda7.zip/node_modules/svgo/",\
+        ["npm:4.0.1", {\
+          "packageLocation": "./.yarn/cache/svgo-npm-4.0.1-262aa771e6-9f3d1d44f7.zip/node_modules/svgo/",\
           "packageDependencies": [\
-            ["svgo", "npm:4.0.0"],\
+            ["svgo", "npm:4.0.1"],\
             ["commander", "npm:11.1.0"],\
             ["css-select", "npm:5.2.2"],\
             ["css-tree", "npm:3.1.0"],\
             ["css-what", "npm:6.2.2"],\
             ["csso", "npm:5.0.5"],\
             ["picocolors", "npm:1.1.1"],\
-            ["sax", "npm:1.4.3"]\
+            ["sax", "npm:1.5.0"]\
           ],\
           "linkType": "HARD"\
         }]\
