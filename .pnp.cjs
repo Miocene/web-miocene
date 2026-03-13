@@ -2525,7 +2525,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["glob", "npm:10.5.0"],\
             ["foreground-child", "npm:3.3.1"],\
             ["jackspeak", "npm:3.4.3"],\
-            ["minimatch", "npm:9.0.5"],\
+            ["minimatch", "npm:9.0.9"],\
             ["minipass", "npm:7.1.2"],\
             ["package-json-from-dist", "npm:1.0.1"],\
             ["path-scurry", "npm:1.11.1"]\
@@ -3845,10 +3845,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["minimatch", [\
-        ["npm:9.0.5", {\
-          "packageLocation": "./.yarn/cache/minimatch-npm-9.0.5-9aa93d97fa-2c035575ed.zip/node_modules/minimatch/",\
+        ["npm:9.0.9", {\
+          "packageLocation": "./.yarn/cache/minimatch-npm-9.0.9-3ee8f15008-5292681ba1.zip/node_modules/minimatch/",\
           "packageDependencies": [\
-            ["minimatch", "npm:9.0.5"],\
+            ["minimatch", "npm:9.0.9"],\
             ["brace-expansion", "npm:2.0.2"]\
           ],\
           "linkType": "HARD"\
