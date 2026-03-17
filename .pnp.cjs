@@ -1527,7 +1527,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["debug", "virtual:f9626122202f52c91b7e2e2bd32ffee6dcb17e453c7f5bd7fa150cc4a9583a9d2a3fdbd96844071e035b4663a19b3f9195e46eb422996f80f2b0dda3be8e1e12#npm:4.4.3"],\
             ["deterministic-object-hash", "npm:2.0.2"],\
             ["devalue", "npm:5.6.4"],\
-            ["diff", "npm:5.2.0"],\
+            ["diff", "npm:5.2.2"],\
             ["dlv", "npm:1.1.3"],\
             ["dset", "npm:3.1.4"],\
             ["es-module-lexer", "npm:1.7.0"],\
@@ -2099,10 +2099,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["diff", [\
-        ["npm:5.2.0", {\
-          "packageLocation": "./.yarn/cache/diff-npm-5.2.0-f523a581f3-12b63ca9c3.zip/node_modules/diff/",\
+        ["npm:5.2.2", {\
+          "packageLocation": "./.yarn/cache/diff-npm-5.2.2-8338a97b62-a1af5d6322.zip/node_modules/diff/",\
           "packageDependencies": [\
-            ["diff", "npm:5.2.0"]\
+            ["diff", "npm:5.2.2"]\
           ],\
           "linkType": "HARD"\
         }]\
