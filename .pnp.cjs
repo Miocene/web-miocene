@@ -2595,10 +2595,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["h3", [\
-        ["npm:1.15.5", {\
-          "packageLocation": "./.yarn/cache/h3-npm-1.15.5-676ab956f4-455f58681d.zip/node_modules/h3/",\
+        ["npm:1.15.8", {\
+          "packageLocation": "./.yarn/cache/h3-npm-1.15.8-f970427097-bf9c85eb2e.zip/node_modules/h3/",\
           "packageDependencies": [\
-            ["h3", "npm:1.15.5"],\
+            ["h3", "npm:1.15.8"],\
             ["cookie-es", "npm:1.2.2"],\
             ["crossws", "npm:0.3.5"],\
             ["defu", "npm:6.1.4"],\
@@ -5497,7 +5497,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chokidar", "npm:4.0.3"],\
             ["db0", null],\
             ["destr", "npm:2.0.5"],\
-            ["h3", "npm:1.15.5"],\
+            ["h3", "npm:1.15.8"],\
             ["idb-keyval", null],\
             ["ioredis", null],\
             ["lru-cache", "npm:10.4.3"],\
