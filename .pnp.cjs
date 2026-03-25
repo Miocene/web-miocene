@@ -79,7 +79,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark-rehype", "npm:11.1.2"],\
             ["remark-smartypants", "npm:3.0.2"],\
             ["shiki", "npm:3.3.0"],\
-            ["smol-toml", "npm:1.3.4"],\
+            ["smol-toml", "npm:1.6.1"],\
             ["unified", "npm:11.0.5"],\
             ["unist-util-remove-position", "npm:5.0.0"],\
             ["unist-util-visit", "npm:5.0.0"],\
@@ -107,7 +107,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark-rehype", "npm:11.1.2"],\
             ["remark-smartypants", "npm:3.0.2"],\
             ["shiki", "npm:3.19.0"],\
-            ["smol-toml", "npm:1.5.2"],\
+            ["smol-toml", "npm:1.6.1"],\
             ["unified", "npm:11.0.5"],\
             ["unist-util-remove-position", "npm:5.0.0"],\
             ["unist-util-visit", "npm:5.0.0"],\
@@ -1554,7 +1554,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:7.7.3"],\
             ["sharp", "npm:0.34.5"],\
             ["shiki", "npm:3.19.0"],\
-            ["smol-toml", "npm:1.5.2"],\
+            ["smol-toml", "npm:1.6.1"],\
             ["svgo", "npm:4.0.1"],\
             ["tinyexec", "npm:1.0.2"],\
             ["tinyglobby", "npm:0.2.15"],\
@@ -4928,17 +4928,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["smol-toml", [\
-        ["npm:1.3.4", {\
-          "packageLocation": "./.yarn/cache/smol-toml-npm-1.3.4-78c02ab477-ddf333c69b.zip/node_modules/smol-toml/",\
+        ["npm:1.6.1", {\
+          "packageLocation": "./.yarn/cache/smol-toml-npm-1.6.1-17dfda1d34-bb5fce0c03.zip/node_modules/smol-toml/",\
           "packageDependencies": [\
-            ["smol-toml", "npm:1.3.4"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:1.5.2", {\
-          "packageLocation": "./.yarn/cache/smol-toml-npm-1.5.2-bb8115e3b2-75b7e84821.zip/node_modules/smol-toml/",\
-          "packageDependencies": [\
-            ["smol-toml", "npm:1.5.2"]\
+            ["smol-toml", "npm:1.6.1"]\
           ],\
           "linkType": "HARD"\
         }]\
