@@ -839,7 +839,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/estree", "npm:1.0.7"],\
             ["@types/rollup", null],\
             ["estree-walker", "npm:2.0.2"],\
-            ["picomatch", "npm:4.0.2"],\
+            ["picomatch", "npm:4.0.3"],\
             ["rollup", null]\
           ],\
           "packagePeers": [\
@@ -1462,7 +1462,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["anymatch", "npm:3.1.3"],\
             ["normalize-path", "npm:3.0.0"],\
-            ["picomatch", "npm:2.3.1"]\
+            ["picomatch", "npm:2.3.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2474,7 +2474,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["fdir", "virtual:13dba315b30721812929c770ddde019c62f0f5aaf3d322e194cc0bf6cf728a558519bedd52ec8aab338ba88d51755f53d336e981f79120c140fd5c81616eeabd#npm:6.4.4"],\
             ["@types/picomatch", null],\
-            ["picomatch", "npm:4.0.2"]\
+            ["picomatch", "npm:4.0.3"]\
           ],\
           "packagePeers": [\
             "@types/picomatch",\
@@ -4337,17 +4337,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["picomatch", [\
-        ["npm:2.3.1", {\
-          "packageLocation": "./.yarn/cache/picomatch-npm-2.3.1-c782cfd986-050c865ce8.zip/node_modules/picomatch/",\
+        ["npm:2.3.2", {\
+          "packageLocation": "./.yarn/cache/picomatch-npm-2.3.2-4d85543a37-0a3f5b9ff2.zip/node_modules/picomatch/",\
           "packageDependencies": [\
-            ["picomatch", "npm:2.3.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:4.0.2", {\
-          "packageLocation": "./.yarn/cache/picomatch-npm-4.0.2-e93516ddf2-a7a5188c95.zip/node_modules/picomatch/",\
-          "packageDependencies": [\
-            ["picomatch", "npm:4.0.2"]\
+            ["picomatch", "npm:2.3.2"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -5147,7 +5140,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["tinyglobby", "npm:0.2.13"],\
             ["fdir", "virtual:13dba315b30721812929c770ddde019c62f0f5aaf3d322e194cc0bf6cf728a558519bedd52ec8aab338ba88d51755f53d336e981f79120c140fd5c81616eeabd#npm:6.4.4"],\
-            ["picomatch", "npm:4.0.2"]\
+            ["picomatch", "npm:4.0.3"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -5611,7 +5604,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jiti", null],\
             ["less", null],\
             ["lightningcss", null],\
-            ["picomatch", "npm:4.0.2"],\
+            ["picomatch", "npm:4.0.3"],\
             ["postcss", "npm:8.5.3"],\
             ["rollup", "npm:4.59.0"],\
             ["sass", null],\
